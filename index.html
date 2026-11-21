@@ -267,7 +267,9 @@ h2 .en-eyebrow{display:block;margin-bottom:4px;font-size:13px;line-height:1.5;fo
 .meta{margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--t3)}
 .links{margin:8px 0 0;font-size:14px;line-height:1.6}
 .tldr{margin:20px 0 16px;padding:16px 20px;background:var(--soft);border-radius:12px;font-size:16px;line-height:1.7;color:var(--h)}
-.steps{margin:24px 0 0;display:grid;grid-template-columns:104px 1fr;column-gap:24px}
+.steps{margin:24px 0 0;display:grid;grid-template-columns:104px minmax(0,1fr);column-gap:24px}
+.steps dd,.steps dt,.what,.edu-text{min-width:0}
+.stat b{overflow-wrap:anywhere}
 .steps dt{font-size:14px;line-height:26px;font-weight:600;color:var(--t3);padding:16px 0;border-top:1px solid var(--line-2)}
 .steps dd{margin:0;padding:16px 0;border-top:1px solid var(--line-2);font-size:15px;line-height:1.75;color:var(--t)}
 .steps dd > p{margin:0}
@@ -376,7 +378,7 @@ footer a{color:var(--t2)}
   .skills{grid-template-columns:1fr}
   .stats,.stats.three{grid-template-columns:1fr 1fr}
   .figs{grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr}
+  .steps{grid-template-columns:minmax(0,1fr)}
   .h3-sub{margin-left:0;font-size:14px}
   .proj h3{padding-left:0;text-indent:0}
   .proj > .meta,.proj > .links,.proj > .note{margin-left:0}
